@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/container_layout_margin">
+
+            <TextView
+                android:id="@+id/signup_title"
+                style="@style/LabelStyle"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/signup_title"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/signup_welcome_msg"
+                style="@style/LabelStyle"
+                android:layout_below="@id/signup_title"
+                android:layout_marginTop="16dp"
+                android:text="@string/signup_welcome_txt" />
+
+            <EditText
+                android:id="@+id/et_full_name"
+                style="@style/EditTextStyle"
+                android:layout_below="@id/signup_welcome_msg"
+                android:layout_marginTop="16dp"
+                android:hint="@string/full_name_hint"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_email_address"
+                style="@style/EditTextStyle"
+                android:layout_below="@id/et_full_name"
+                android:layout_marginTop="16dp"
+                android:hint="@string/email_address_hint"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/EditTextStyle"
+                android:layout_below="@id/et_email_address"
+                android:layout_marginTop="16dp"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                style="@style/SolidButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@id/et_password"
+                android:layout_marginTop="20dp"
+                android:text="@string/signup_btn_label" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
